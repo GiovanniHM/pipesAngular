@@ -20,7 +20,7 @@ export class NoComunesComponent implements OnInit {
 
   invitacionMap={
     'm': 'invitarlo',
-    'f': 'invitarlo',
+    'f': 'invitarla',
   }
 
   //i18nPlural
@@ -30,6 +30,28 @@ export class NoComunesComponent implements OnInit {
     '=0': 'no tenemos cliente esperando',
     '=1': 'tenemos un cliente esperando',
     'other': 'tenemos # clientes esperando',
+
+  }
+
+  changeGenderM(){
+    this.nombre = 'Mario';
+    this.genero = 'm';
+
+  }
+
+  changeGenderF(){
+    this.nombre = 'Susana';
+    this.genero = 'f';
+
+  }
+
+  addedPeople(){
+    this.clientes.push('');
+
+  }
+
+  lessPeople(){
+    this.clientes.splice(0,1);
 
   }
 
