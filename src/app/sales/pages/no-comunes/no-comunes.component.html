@@ -56,4 +56,21 @@
     </p-fieldset>
 
   </div>
+
+
+  <div class="p-col p-md-6">
+    <p-fieldset legend="Slice Pipe Pipe" [toggleable]="true">
+      <b>Original</b>
+      <pre>{{this.clientes}}</pre>
+      <b>slice: 0:2</b>
+      <pre>{{clientes | slice:0:2}}</pre>
+
+
+    </p-fieldset>
+
+  </div>
+
+
+
+
 </div>
