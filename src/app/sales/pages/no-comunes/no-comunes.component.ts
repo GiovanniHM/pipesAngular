@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { rejects } from 'assert';
 import { PrimeNGConfig } from 'primeng/api';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -66,6 +68,16 @@ export class NoComunesComponent implements OnInit {
 
   heros = ['iron Maon', 'Cap', 'Thor']
 
+  //ASYNC
+
+  miObserbale = interval(100);
+
+  valorPromesa = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+        resolve('Fin de la promesa')
+    }, 3500);
+  });
 
 
 }
