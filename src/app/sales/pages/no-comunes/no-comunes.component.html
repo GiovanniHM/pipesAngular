@@ -70,6 +70,26 @@
 
   </div>
 
+  <div class="p-col p-md-6">
+    <p-fieldset legend="Key value" [toggleable]="true">
+    <u>
+      <li *ngFor="let item of persona |keyvalue">
+        <b>{{item.key}}</b>  : {{item.value}}
+      </li>
+    </u>
+
+    </p-fieldset>
+
+  </div>
+
+  <div class="p-col p-md-6">
+    <p-fieldset legend="JSON pipe" [toggleable]="true">
+   <pre>{{heros |json}}</pre>
+
+    </p-fieldset>
+
+  </div>
+
 
 
 

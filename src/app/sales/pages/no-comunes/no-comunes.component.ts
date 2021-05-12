@@ -52,8 +52,19 @@ export class NoComunesComponent implements OnInit {
 
   lessPeople(){
     this.clientes.splice(0,1);
-
   }
+
+  //KeyValue pipe
+
+  persona = {
+    nombre: 'test',
+    edad: 45454,
+    direccion: 'Error 404'
+  }
+
+  //Json pipe
+
+  heros = ['iron Maon', 'Cap', 'Thor']
 
 
 
