@@ -1,1 +1,43 @@
-<p>numeros works!</p>
+<div class="text-layout">
+  <h1>DecimalPipe y Porcentaje</h1>
+  <p>
+      Pipes de numeros
+  </p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-4">
+    <p-card
+            header="Ventas Netas"
+            subheader="del año"
+
+            >
+            <i class="pi pi-dollar"></i>
+            {{ventasNetas + 4564654 |number: '.2-2'}}
+
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card
+            header="Ventas brutas"
+            subheader="del año"
+
+            >
+            {{ventasNetas + 4564654 |currency:'USD': 'symbol-narrow':'1.0-4'}}
+
+    </p-card>
+  </div>
+
+  <div class="p-col-4">
+    <p-card
+            header="Ganancia porcentual %"
+            subheader="del año"
+
+            >
+            {{porcentaje |percent: '1.2-2'}}
+
+    </p-card>
+  </div>
+
+
+</div>

@@ -11,5 +11,9 @@ export class BasicosComponent{
   nameUpper : string = "TRACUSA"
   nameComple : string = "traCusa La ruTa dEL sOl"
 
+  //Pipe date
+
+  fecha: Date = new Date(); //Now
+
 
 }
